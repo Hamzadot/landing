@@ -32,6 +32,7 @@ export default {
 			{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' }
 		],
 		script: [
+			{src: 'https://www.googletagmanager.com/gtag/js?id=G-6VTVXVGNCD', body: true}
 		]
 	},
 
@@ -52,7 +53,10 @@ export default {
 	buildModules: [
 		'@nuxtjs/tailwindcss',
 		'@nuxtjs/pwa',
-		'@nuxtjs/google-analytics'
+		'@nuxtjs/google-analytics',
+		['vue-scrollto/nuxt', {
+			offset: -50
+		}],
 	],
 
 	tailwindcss: {
@@ -66,8 +70,8 @@ export default {
 		manifest: {
 			name: 'Parasol Finance',
 			lang: 'en',
-			background_color: "#F472B6",
-			theme_color: "#F472B6",
+			background_color: "#161921",
+			theme_color: "#161921",
 			useWebmanifestExtension: false
 		}
 	},

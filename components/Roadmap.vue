@@ -1,8 +1,8 @@
 <template>
 	<section class="mt-5 mb-10 lg:mt-10 lg:mb-20 bg-gradient-to-r from-purple-500 to-pink-500 text-center pt-10 pb-12 lg:pt-20 lg:pb-28 text-white">
-		<p class="mt-2 text-3xl font-extrabold text-white-900 tracking-tight sm:text-4xl">
+		<a id="roadmap" class="mt-2 text-3xl font-extrabold text-white-900 tracking-tight sm:text-4xl">
 			Our Roadmap
-		</p>
+		</a>
 		<p class="mt-5 max-w-prose mx-auto lg:text-xl text-base text-white">
 			Learn more about the Parasol Finance Project.
 		</p>

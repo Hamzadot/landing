@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownAttribute -->
 <template>
 	<header class="py-10">
 		<div class="mx-auto max-w-7xl px-5 flex justify-between">
@@ -10,16 +11,16 @@
 			</div>
 		</div>
 		<div class="hidden space-x-10 md:flex items-center md:ml-10">
-			<NuxtLink class="font-medium text-white hover:text-gray-300" href="#" to="/">
+			<NuxtLink :to="{path: '/', hash: 'features'}" v-scroll-to="{el: '#features'}" class="font-medium text-white hover:text-gray-300">
 				About Parasol Finance
 			</NuxtLink>
-			<NuxtLink class="font-medium text-white hover:text-gray-300" href="#" to="/">
+			<NuxtLink :to="{path: '/', hash: 'roadmap'}" v-scroll-to="{el: '#roadmap'}" class="font-medium text-white hover:text-gray-300">
 				Roadmap
 			</NuxtLink>
-			<NuxtLink class="font-medium text-white hover:text-gray-300" href="#" to="/">
-				FAQ
-			</NuxtLink>
-			<a class="font-medium text-white hover:text-gray-300" href="mailto:contact@parasol.finance">
+			<a href="https://docs.parasol.finance" target="_blank" class="font-medium text-white hover:text-gray-300">
+				Read Docs.
+			</a>
+			<a href="mailto:contact@parasol.finance" class="font-medium text-white hover:text-gray-300">
 				Contact Us
 			</a>
 			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdbnmssmtnA1cy_YTGLMuT7CZ99-p7OZ5yeUz1XUeos5mPIsQ/viewform?usp=sf_link" target="_blank" class="items-center px-4 flex py-2 shadow-xl bg-gradient-to-r from-purple-500 to-pink-500 text-sm font-medium rounded-full text-white">

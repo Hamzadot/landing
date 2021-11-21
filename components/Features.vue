@@ -2,9 +2,9 @@
 	<section class="mt-5 mb-20 lg:mt-10">
 		<div class="mx-auto max-w-7xl px-5 text-center">
 			<h2 class="text-base font-semibold tracking-wider text-pink-400 uppercase">Discover Parasol</h2>
-			<p class="mt-2 text-3xl font-extrabold text-white-900 tracking-tight sm:text-4xl">
+			<a id="features" class="mt-2 text-3xl font-extrabold text-white-900 tracking-tight sm:text-4xl">
 				What is Parasol Finance?
-			</p>
+			</a>
 			<p class="mt-5 max-w-prose mx-auto text-sm lg:text-base text-gray-400">
 				Parasol Finance is the first community governed IDO platform built on Solana.
 			</p>
