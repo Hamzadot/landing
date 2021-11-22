@@ -11,7 +11,7 @@ export default {
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'Parasol Finance ($PSOL) | The First Community Governed IDO Platform.',
+		title: 'Parasol Finance ($PSOL) | The First Community Governed IDO Platform on Solana.',
 		htmlAttrs: {
 			lang: 'en'
 		},

@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownAttribute -->
 <template>
 	<footer class="">
 		<div class="mx-auto max-w-7xl px-5 py-5 lg:py-10 grid grid-cols-3">
@@ -42,7 +43,7 @@
 						<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">About Parasol</h3>
 						<ul role="list" class="mt-4 space-y-4">
 							<li>
-								<a href="#" class="text-base text-gray-500 hover:text-gray-300">Introducing Parasol</a>
+								<a href="#features" class="text-base text-gray-500 hover:text-gray-300">Introducing Parasol</a>
 							</li>
 							<li>
 								<a href="https://docs.parasol.finance" target="_blank" class="text-base text-gray-500 hover:text-gray-300">Documentation</a>
@@ -59,16 +60,13 @@
 						<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Useful Links</h3>
 						<ul role="list" class="mt-4 space-y-4">
 							<li>
-								<NuxtLink to="/faq" class="text-base text-gray-500 hover:text-gray-300">Features</NuxtLink>
+								<NuxtLink :to="{path: '/', hash: 'features'}" v-scroll-to="{el: '#features'}" class="text-base text-gray-500 hover:text-gray-300">Features</NuxtLink>
 							</li>
 							<li>
-								<NuxtLink to="/faq" class="text-base text-gray-500 hover:text-gray-300">Roadmap</NuxtLink>
+								<NuxtLink :to="{path: '/', hash: 'roadmap'}" v-scroll-to="{el: '#roadmap'}" class="text-base text-gray-500 hover:text-gray-300">Roadmap</NuxtLink>
 							</li>
 							<li>
-								<NuxtLink to="/faq" class="text-base text-gray-500 hover:text-gray-300">FAQ</NuxtLink>
-							</li>
-							<li>
-								<NuxtLink to="/faq" class="text-base text-gray-500 hover:text-gray-300">Pre-sale</NuxtLink>
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdbnmssmtnA1cy_YTGLMuT7CZ99-p7OZ5yeUz1XUeos5mPIsQ/viewform" target="_blank" class="text-base text-gray-500 hover:text-gray-300">Pre-sale</a>
 							</li>
 						</ul>
 					</div>

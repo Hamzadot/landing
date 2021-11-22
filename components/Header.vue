@@ -1,7 +1,7 @@
 <!--suppress HtmlUnknownAttribute -->
 <template>
 	<header class="py-10">
-		<div class="mx-auto max-w-7xl px-5 flex justify-between">
+		<div class="mx-auto max-w-7xl px-5 flex justify-center lg:justify-between">
 		<div>
 			<div class="flex items-center justify-between w-full md:w-auto">
 				<NuxtLink class="flex-shrink-0 flex items-center" to="/">
