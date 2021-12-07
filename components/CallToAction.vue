@@ -15,7 +15,7 @@
 						</h2>
 						<p class="mt-6 mx-auto max-w-2xl text-lg">
 							The launch of Parasol Finance will be split into some steps, the first is the presale, we advise you to read our roadmap above.
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdbnmssmtnA1cy_YTGLMuT7CZ99-p7OZ5yeUz1XUeos5mPIsQ/viewform?usp=sf_link" target="_blank" class="font-bold">
+							<a href="https://app.parasol.finance/presale" class="font-bold">
 								<span class="underline">Participate to Presale</span>
 								&rarr;
 							</a>

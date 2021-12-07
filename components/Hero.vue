@@ -32,14 +32,14 @@
 						Parasol Finance is the first-ever community governed IDO platform built on Solana with the needs of both projects and investors alike.
 					</p>
 					<div class="mt-8 grid lg:flex gap-3 grid-cols-1 lg:grid-cols-2 justify-start">
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLSdbnmssmtnA1cy_YTGLMuT7CZ99-p7OZ5yeUz1XUeos5mPIsQ/viewform?usp=sf_link" target="_blank" class="flex items-center justify-center px-7 bg-pink-600 py-3 text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500">
-							<svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-							Join the Waiting List
-						</a>
-<!--						<button type="button" class="flex items-center justify-center px-7 bg-pink-600 py-3 text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500">-->
+<!--						<a href="https://docs.google.com/forms/d/e/1FAIpQLSdbnmssmtnA1cy_YTGLMuT7CZ99-p7OZ5yeUz1XUeos5mPIsQ/viewform?usp=sf_link" target="_blank" class="flex items-center justify-center px-7 bg-pink-600 py-3 text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500">-->
 <!--							<svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>-->
-<!--							Open Parasol Application-->
-<!--						</button>-->
+<!--							Join the Waiting List-->
+<!--						</a>-->
+						<button type="button" class="flex items-center justify-center px-7 bg-pink-600 py-3 text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500">
+							<svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+							Open Parasol Application
+						</button>
 						<button @click="joinCommunity" type="button" class="flex items-center justify-center px-7 py-3 text-base font-medium border border-white rounded-full shadow-lg text-white hover:to-purple-500">
 							Join The Community
 						</button>
