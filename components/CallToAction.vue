@@ -14,7 +14,8 @@
 							Participate in Presale.
 						</h2>
 						<p class="mt-6 mx-auto max-w-2xl text-lg">
-							The launch of Parasol Finance will be split into some steps, the first is the presale, we advise you to read our roadmap above.
+							The key advantage as the ownership of Parasol tokens ($PSOL) gives a right of governance and voting on projects. Our governed platform will be an integral part of bringing new and existing projects and protocols into the Parasol ecosystem with the possibility to invest early.
+<!--							The launch of Parasol Finance will be split into some steps, the first is the presale, we advise you to read our roadmap above.-->
 							<a href="https://app.parasol.finance/presale" class="font-bold">
 								<span class="underline">Participate in Presale</span>
 								&rarr;
