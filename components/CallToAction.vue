@@ -11,12 +11,12 @@
 				<div class="relative">
 					<div class="text-center">
 						<h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-							Participate to Presale.
+							Participate in Presale.
 						</h2>
 						<p class="mt-6 mx-auto max-w-2xl text-lg">
 							The launch of Parasol Finance will be split into some steps, the first is the presale, we advise you to read our roadmap above.
 							<a href="https://app.parasol.finance/presale" class="font-bold">
-								<span class="underline">Participate to Presale</span>
+								<span class="underline">Participate in Presale</span>
 								&rarr;
 							</a>
 						</p>

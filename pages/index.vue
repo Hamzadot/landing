@@ -3,7 +3,7 @@
 		<Hero />
 		<Features />
 		<Roadmap />
-		<Investors />
+		<Listing />
 		<CallToAction />
 	</div>
 </template>
