@@ -31,14 +31,27 @@
 					<p class="mt-7 text-base text-gray-300 font-medium text-xl">
 						Parasol Finance is the first-ever community governed IDO platform built on Solana with the needs of both projects and investors alike.
 					</p>
+					<div class="flex justify-between mt-6">
+						<p class="text-gray-300 text-sm mb-3">
+							Presale in Progress
+							—
+							{{ this.toUsd(this.totalParticipation) }}
+							({{ this.getParticipationProgress() }} %)
+						</p>
+						<p class="text-gray-300 text-sm mb-3">Hard Cap: $370,440</p>
+					</div>
+					<div class="w-full bg-gray-400 mb-6 rounded-full h-2.5">
+						<div class="bg-gradient-to-r from-purple-500 to-pink-600 h-2.5 rounded-full" :style="`width: ${this.getParticipationProgress()}%`"></div>
+					</div>
+<!--					<p class="text-sm text-gray-300">We are curretly running our presale bla bla you can participate.</p>-->
 					<div class="mt-8 grid lg:flex gap-3 grid-cols-1 lg:grid-cols-2 justify-start">
 <!--						<a href="https://docs.google.com/forms/d/e/1FAIpQLSdbnmssmtnA1cy_YTGLMuT7CZ99-p7OZ5yeUz1XUeos5mPIsQ/viewform?usp=sf_link" target="_blank" class="flex items-center justify-center px-7 bg-pink-600 py-3 text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500">-->
 <!--							<svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>-->
 <!--							Join the Waiting List-->
 <!--						</a>-->
-						<a href="https://app.parasol.finance/" class="flex items-center justify-center px-7 bg-pink-600 py-3 text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500">
+						<a href="https://app.parasol.finance/" class="flex items-center justify-center px-10 bg-pink-600 py-3 text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500">
 							<svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-							Open Parasol Application
+							Participate in Presale
 						</a>
 						<button @click="joinCommunity" type="button" class="flex items-center justify-center px-7 py-3 text-base font-medium border border-white rounded-full shadow-lg text-white hover:to-purple-500">
 							Join The Community
@@ -56,9 +69,23 @@
 <script>
 export default {
 	name: "Hero",
+	data() {
+		return {
+			totalParticipation: 0
+		}
+	},
+	async mounted() {
+		this.totalParticipation = (await this.getTotalParticipation()).value.uiAmount;
+	},
 	methods: {
 		joinCommunity: function() {
 			this.$root.$emit('joinCommunity');
+		},
+		getParticipationProgress: function () {
+			return Math.round(100 / (370440 / this.totalParticipation));
+		},
+		toUsd: function (value) {
+			return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
 		}
 	}
 }
@@ -68,5 +95,10 @@ export default {
 #hero
 {
 	height: calc(100vh - 20vh - 21vh);
+}
+
+.bouncing
+{
+	object-fit: cover;
 }
 </style>
