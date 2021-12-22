@@ -32,7 +32,7 @@
 						Parasol Finance is the first-ever community governed IDO platform built on Solana with the needs of both projects and investors alike.
 					</p>
 					<div class="flex justify-between mt-6">
-						<p class="text-gray-300 text-sm mb-3">
+						<p class="text-gray-300 text-sm mb-3 truncate">
 							Presale in Progress
 							—
 							{{ this.toUsd(this.totalParticipation) }}
@@ -94,7 +94,7 @@ export default {
 <style scoped>
 #hero
 {
-	height: calc(100vh - 20vh - 21vh);
+	min-height: calc(100vh - 20vh - 21vh);
 }
 
 .bouncing
