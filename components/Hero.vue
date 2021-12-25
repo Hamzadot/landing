@@ -38,7 +38,7 @@
 							{{ this.toUsd(this.totalParticipation) }}
 							({{ this.getParticipationProgress() }} %)
 						</p>
-						<p class="text-gray-300 text-sm mb-3">Hard Cap: $370,440</p>
+						<p class="text-gray-300 text-sm mb-3">Total Hard Cap: $1,142,190</p>
 					</div>
 					<div class="w-full bg-gray-400 mb-6 rounded-full h-2.5">
 						<div class="bg-gradient-to-r from-purple-500 to-pink-600 h-2.5 rounded-full" :style="`width: ${this.getParticipationProgress()}%`"></div>
@@ -82,7 +82,7 @@ export default {
 			this.$root.$emit('joinCommunity');
 		},
 		getParticipationProgress: function () {
-			return Math.round(100 / (370440 / this.totalParticipation));
+			return Math.round(100 / (1142190 / this.totalParticipation));
 		},
 		toUsd: function (value) {
 			return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
