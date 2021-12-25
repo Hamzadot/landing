@@ -33,7 +33,7 @@
 					</p>
 					<div class="flex justify-between mt-6">
 						<p class="text-gray-300 text-sm mb-3 truncate">
-							Presale in Progress
+							Presale Phase 3 in Progress
 							—
 							{{ this.toUsd(this.totalParticipation) }}
 							({{ this.getParticipationProgress() }} %)
