@@ -66,7 +66,7 @@
 								<NuxtLink :to="{path: '/', hash: 'roadmap'}" v-scroll-to="{el: '#roadmap'}" class="text-base text-gray-500 hover:text-gray-300">Roadmap</NuxtLink>
 							</li>
 							<li>
-								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdbnmssmtnA1cy_YTGLMuT7CZ99-p7OZ5yeUz1XUeos5mPIsQ/viewform" target="_blank" class="text-base text-gray-500 hover:text-gray-300">Pre-sale</a>
+								<a href="https://app.parasol.finance/presale" target="_blank" class="text-base text-gray-500 hover:text-gray-300">Pre-sale</a>
 							</li>
 						</ul>
 					</div>
